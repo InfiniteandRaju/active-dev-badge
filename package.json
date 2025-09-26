@@ -1,0 +1,14 @@
+{
+  "name": "my-discord-bot",
+  "version": "1.0.0",
+  "description": "Safe Discord bot with whitelisted commands",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.0",
+    "dotenv": "^16.1.0"
+  }
+}
