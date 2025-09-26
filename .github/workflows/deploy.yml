@@ -22,9 +22,16 @@ jobs:
         cache: 'npm'
         
     - name: Install dependencies
-      run: npm install
-      
-    - name: Run bot with timeout
+      run: |
+        npm ci  # Use npm ci for cleaner installs
+        
+    - name: Verify installation
+      run: |
+        echo "Checking installed packages:"
+        npm list discord.js dotenv
+        echo "Dependencies verified!"
+        
+    - name: Run bot
       env:
         DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
       run: |
