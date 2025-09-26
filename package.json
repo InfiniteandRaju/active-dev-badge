@@ -4,7 +4,8 @@
   "description": "Discord bot for Active Developer badge",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "install-deps": "npm install"
   },
   "dependencies": {
     "discord.js": "^14.14.1",
